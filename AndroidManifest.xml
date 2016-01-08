@@ -3,13 +3,14 @@
       package="net.zhuoweizhang.scanmediaplz"
       android:versionCode="1"
       android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="1" android:targetSdkVersion="19"/>
-    <application android:label="@string/app_name" >
+    <uses-sdk android:minSdkVersion="1" android:targetSdkVersion="23"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <activity android:name="ScanMediaPlzActivity"
                   android:label="@string/app_name"
                   android:excludeFromRecents="true"
                   android:stateNotNeeded="true"
-                  android:launchMode="singleInstance">
+                  android:launchMode="singleInstance"
+                  android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
